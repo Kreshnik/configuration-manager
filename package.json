@@ -1,0 +1,28 @@
+{
+  "name": "configuration-manager",
+  "version": "1.0.0",
+  "description": "A Laravel inspired configuration module.",
+  "license": "MIT",
+  "repository": "https://github.com/Kreshnik/configuration-manager",
+  "author": {
+    "name": "Kreshnik Hasanaj",
+    "email": "kreshnik.hasanaj@gmail.com",
+    "url": "http://ninxha.com"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "config",
+    "configuration",
+    "laravel"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
