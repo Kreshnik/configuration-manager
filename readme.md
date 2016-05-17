@@ -1,4 +1,4 @@
-# configuration-manager
+# configuration-man
 > A node module, inspired by Laravel's configuration class.
 
 
@@ -17,18 +17,18 @@ Example:
 ## Install
 
 ```
-$ npm install --save configuration-manager
+$ npm install --save configuration-man
 ```
 
 
 ## Include the module
 
 ```
-const config = require('configuration-manager')();
+const config = require('configuration-man')();
 ```
 
 ### Options
-You can pass the following options object to the ```configuration-manager```. 
+You can pass the following options object to the ```configuration-man```. 
 
 #### Properties 
 
@@ -37,7 +37,7 @@ You can pass the following options object to the ```configuration-manager```.
 **configPath** -> The folder that contains the configuration files.
  
 ```
-const config = require('configuration-manager')({
+const config = require('configuration-man')({
     basePath: path.dirname(__filename),
     configPath: "/config/"
 });
