@@ -2,13 +2,18 @@
 var path = require('path'),
     fs = require('fs'),
     extend = require('util')._extend,
-    items = [],
-    configData = null,
-    configFile = null;
+    configFiles = [],
+    configFile = null,
+    configData = null;
 
 function doesConfigFileExist(file) {
-    return items.indexOf(file) !== -1;
+    return configFiles.indexOf(file) !== -1;
 
+}
+function getConfigurationFiles(options) {
+    configFiles = fs.readdirSync(options.basePath + options.configPath).map(function (file) {
+        return file.substring(0, file.indexOf('.'));
+    });
 }
 module.exports = function (opt) {
 
@@ -17,10 +22,8 @@ module.exports = function (opt) {
         configPath: "/config/"
     }, opt);
 
-    items = fs.readdirSync(options.basePath + options.configPath);
-    items = items.map(function (file) {
-        return file.substring(0, file.indexOf('.'));
-    });
+
+    getConfigurationFiles(options);
 
     return {
 

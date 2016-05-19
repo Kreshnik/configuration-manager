@@ -49,7 +49,7 @@ You can use the following methods with the module.
 
 Determine if the given configuration value exists. (Note: The first word before the dot, is the json file name.)
 
-**config.has('app.env')** -> Check if the configuration file app.js has a property called ```env```.
+**config.has('app.env')** -> Check if the configuration file ```app.js``` has a property called ```env```.
 
 Get the specified configuration value. (Note: The first word before the dot, is the json file name.)
 

@@ -1,6 +1,6 @@
 {
   "name": "configuration-man",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Laravel inspired configuration module.",
   "license": "MIT",
   "repository": "https://github.com/Kreshnik/configuration-manager",
